@@ -127,7 +127,7 @@ class Graph(object):
 
         return user_embeddings, news_embeddings
 
-    def _kcnn(self, words, nodes, args):
+    def _scnn(self, words, nodes, args):
         # (batch_size * max_click_history, word_dim) for users words, (batch_size * max_click_history, node_dim) for users_nodes
         # (batch_size, word_dim) for news words, (batch_size, word_dim) for news node
 
